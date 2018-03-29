@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	padding: 0;
+	margin: 0;
+	background: black;
+	color: white;
+}
+table {
+	margin-top:3%;
+	width: 100%;
+	height: 100%;
+}
+th{
+	transition: background-color 2s, color 2s;
+	border: 3px solid white;
+	padding: 1% 0;
+	width: 33%;
+}
+.title{
+	text-align: center;
+}
+a{
+	color:white;
+	text-decoration: none;
+}
+th:hover{
+	background-color: white;
+}
+th:hover>a{
+	color: black;
+}
+iframe {
+	display: block;
+	border:none;
+	margin-top:1%;
+	width: 100%;
+	height: 100vh;
+}
+</style>
+<meta charset="EUC-KR">
+<title>ShoppingMall</title>
+</head>
+<body>
+<h3 class="title">쇼핑몰 회원관리</h3>
+<table>
+<thead>
+<tr>
+<th><a href="memreg.jsp" target="content">회원등록</a></th>
+<th><a href="memmod.jsp" target="content">회원목록조회/수정</a></th>
+<th><a href="saleindex.jsp" target="content">회원매출조회</a></th>
+</tr>
+</thead>
+</table>
+<iframe name="content" />
+</body>
+</html>
